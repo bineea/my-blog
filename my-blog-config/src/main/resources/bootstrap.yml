@@ -1,0 +1,5 @@
+spring:
+  application:
+    name: configurationservice
+encrypt:
+  key: zhimakaimen #设置对称密钥

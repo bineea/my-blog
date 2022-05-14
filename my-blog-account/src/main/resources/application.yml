@@ -1,0 +1,13 @@
+eureka:
+  instance:
+    #将服务的IP地址而不是服务的主机名注册到Eureka
+    prefer-ip-address: true
+  client:
+    #触发器，是否通过Eureka注册本服务
+    register-with-eureka: true
+    #告知Spring Eureka客户端是否获取注册表的本地副本。将此属性设置为true将在本地缓存注册表
+    fetch-registry: true
+    #Eureka服务的列表，列表以逗号分隔（Eureka集群）
+    #service-url的配置内容是map，map的内容是可以自己发挥的，只要是key: value格式就行（注意有个空格）
+    service-url:
+      defaultZone: http://localhost:8761/eureka
