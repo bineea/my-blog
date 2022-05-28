@@ -1,5 +1,18 @@
 # 比application context先加载
-# 配置应用名称
+# 默认配置
 spring:
   application:
     name: eurekaservice
+  # 切换配置
+  profiles:
+    active: dev
+
+# springboot2.3版本及以前的不同环境配置
+# 开发环境配置
+---
+spring:
+  profiles: dev
+# 测试环境配置
+---
+spring:
+  profiles: tst
